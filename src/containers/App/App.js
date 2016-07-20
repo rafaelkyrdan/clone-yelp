@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { Router } from 'react-router';
 
-import styles from '../../app.css'
+import styles from './styles.module.css'
 
 class App extends React.Component {
   static contextTypes = {
@@ -25,7 +25,7 @@ class App extends React.Component {
      return (
        <div  className={styles['container']}>
          {this.content}
-         <h1>Environment: {__NODE_ENV__}</h1>
+         <h1> <i className="fa fa-star"></i> Environment: {__NODE_ENV__}</h1>
        </div>
      )
    }

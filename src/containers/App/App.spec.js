@@ -25,4 +25,9 @@ describe('<App />', () => {
       .to.be.defined;
   })
 
+  it('has a single wrapper element', () => {
+    expect(wrapper.find(`.${styles.container}`))
+            .to.have.length(1);
+  });
+
 });
