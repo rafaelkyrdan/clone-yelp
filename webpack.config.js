@@ -29,6 +29,7 @@ var config = getConfig({
   isDev: isDev,
   in: join(src, 'app.js'),
   out: dest,
+  clearBeforeBuild: true,
   html: function (context) {
     return {
       'index.html': context.defaultTemplate({
