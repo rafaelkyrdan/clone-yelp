@@ -25,6 +25,7 @@ class App extends React.Component {
      return (
        <div  className={styles['container']}>
          {this.content}
+         <h1>Environment: {__NODE_ENV__}</h1>
        </div>
      )
    }

@@ -6,7 +6,7 @@ Project for self-education.
 2. Create webpack config with help `hjs-webpack`.
 3. Added support for css modules with help `http://postcss.org/` and created custom
 loader.
-4.
+4. Added plugin for replacing environment variables in the code.
 
 
 ## Source
