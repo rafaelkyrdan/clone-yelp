@@ -3,6 +3,8 @@ import Map, {GoogleApiWrapper} from 'google-maps-react'
 import {searchNearby} from 'utils/googleApiHelpers'
 
 import Header from 'components/Header/Header'
+import Sidebar from 'components/Sidebar/Sidebar'
+
 import styles from './styles.module.css'
 
 export class Container extends React.Component {
@@ -43,16 +45,30 @@ export class Container extends React.Component {
   }
 
   render() {
+
+    let children = null;
+    if (this.props.children) {
+      // We have children in the Container component
+      children = React.cloneElement(
+        this.props.children,
+        {
+          google: this.props.google,
+          places: this.state.places,
+          loaded: this.props.loaded
+        });
+    }
     return (
       <div>
-      <Map
-          visible={false}
-          className={styles.wrapper}>
+
           <Header />
+          <Sidebar
+              title={'Restaurants'}
+              places={this.state.places} />
           <div className={styles.content}>
-            {/* contents */}
+            {/* Setting children routes to be rendered*/}
+            {children}
           </div>
-        </Map>
+
       </div>
     )
   }
