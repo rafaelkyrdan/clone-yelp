@@ -1,14 +1,14 @@
-# clone-yelp
+# react-clone-yelp
 Project for self-education.
 
-## Steps
-1. Create initial structure with help `yo react-gen`.
-2. Create webpack config with help `hjs-webpack`.
-3. Added support for css modules with help `http://postcss.org/` and created custom
-loader.
-4. Added plugin for replacing environment variables in the code.
-5. Added `google-maps-react` component to the project.
+## How to:
 
+How to run the app:
+1. Update the `.env` file with your Google Map API key
+2. Run the command `npm start`
+
+How to run the test:
+1. Run the command `npm test`
 
 ## Source
 [Link](https://www.fullstackreact.com/articles/react-tutorial-cloning-yelp/)
