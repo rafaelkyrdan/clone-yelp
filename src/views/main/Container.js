@@ -44,19 +44,15 @@ export class Container extends React.Component {
 
   render() {
     return (
-      <div className={styles.wrapper}>
-        <Header tite="play" />
-        <div className={styles.content}>
-          {this.renderChildren()}
-        </div>
-        <Map
-          onReady={this.onReady.bind(this)}
-          google={this.props.google}
-          visible={false} />
-
-          {this.state.places.map(place => {
-            return (<div key={place.id}>{place.name}</div>)
-          })}
+      <div>
+      <Map
+          visible={false}
+          className={styles.wrapper}>
+          <Header />
+          <div className={styles.content}>
+            {/* contents */}
+          </div>
+        </Map>
       </div>
     )
   }

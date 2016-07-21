@@ -23,7 +23,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  title: 'clone yelp'
+  title: 'react yelp app'
 }
 
 export default Header
