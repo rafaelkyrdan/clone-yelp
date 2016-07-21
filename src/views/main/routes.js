@@ -14,10 +14,11 @@ export const makeMainRoutes = () => {
             cb(null, mod.default);
           });
         }} />
-      {/* inline loading */}
-      <IndexRoute component={IndexPage} />
+
     </Route>
   )
-}
 
+  // {/* inline loading */}
+  // <IndexRoute component={IndexPage} />
+}
 export default makeMainRoutes
