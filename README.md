@@ -7,6 +7,7 @@ Project for self-education.
 3. Added support for css modules with help `http://postcss.org/` and created custom
 loader.
 4. Added plugin for replacing environment variables in the code.
+5. Added `google-maps-react` component to the project.
 
 
 ## Source
