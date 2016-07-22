@@ -9,6 +9,3 @@ How to run the app:
 
 How to run the test:
 1. Run the command `npm test`
-
-## Source
-[Link](https://www.fullstackreact.com/articles/react-tutorial-cloning-yelp/)

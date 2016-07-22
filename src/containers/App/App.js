@@ -1,8 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Router } from 'react-router';
 
-import styles from './styles.module.css'
-
 class App extends React.Component {
   static contextTypes = {
     router: PropTypes.object
@@ -23,7 +21,7 @@ class App extends React.Component {
 
   render () {
      return (
-       <div  className={styles['container']}>
+       <div style={{ height: '100%' }}>
          {this.content}
        </div>
      )
