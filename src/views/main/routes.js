@@ -2,7 +2,7 @@ import React from 'react'
 import {Route, IndexRoute} from 'react-router'
 
 import Container from './Container'
-import IndexPage from './indexPage/IndexPage'
+import Detail from './Detail/Detail'
 import Map from './Map/Map'
 
 export const makeMainRoutes = () => {
@@ -10,10 +10,10 @@ export const makeMainRoutes = () => {
     <Route path="/" component={Container}>
       {/* Lazy-loading */}
       <Route path="map" component={Map} />
+      <Route path="detail/:placeId"
+            component={Detail} />
+            <IndexRoute component={Map} />
     </Route>
-  )
-
-  // {/* inline loading */}
-  // <IndexRoute component={IndexPage} />
+  )  
 }
 export default makeMainRoutes

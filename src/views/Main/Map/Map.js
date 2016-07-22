@@ -6,12 +6,19 @@ import styles from './styles.module.css'
 
 
 export class MapComponent extends React.Component {
+
+  renderChildren() {
+    const {children} = this.props;
+    // ...
+  }
+
   renderMarkers() {
     if (!this.props.places) { return null; }
     return this.props.places.map(place =>{
       return <Marker key={place.id}
               name={place.id}
               place={place}
+              onClick={this.props.onMarkerClick.bind(this)}
               position={place.geometry.location}
             />
           })
