@@ -1,5 +1,5 @@
 # react-clone-yelp
-Project for self-education.
+Demo project.
 
 ## How to:
 
